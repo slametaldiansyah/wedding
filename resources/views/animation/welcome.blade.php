@@ -224,8 +224,9 @@ function showPage() {
 <script>
     var link = window.location.hash;
     var data = link.split("#");
-    var nameU = data[1].split("=")[1].replace(/%20/g," ");
-    var pasanganU = data[2].split("=")[1].replace(/%20/g," ");
+    var nameU = data[1].split("=")[1].replace(/%22/g," ").replace(/%20/g," ");
+    var pasanganU = data[2].split("=")[1].replace(/%22/g," ").replace(/%20/g," ");
+    console.log(nameU);
     $("#name").text(nameU);
     if (pasanganU == "1") {
         $("#pasangan").text("& Partner");
