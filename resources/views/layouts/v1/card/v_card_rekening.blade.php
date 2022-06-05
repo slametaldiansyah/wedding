@@ -43,20 +43,22 @@
 
   <div class="modal fade bd-alertdialog-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
+        <div class="modal-content" style="background-color: #21252987">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalCenterTitle" style="color: white">Welcome</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            ...
+              <div class="d-flex justify-content-center">
+                  <button type="button" class="btn btn-sm btn-outline-secondary mr-3" data-dismiss="modal" style="color: white">Next</button>
+                  <button type="button" class="btn btn-sm btn-card-donation" data-dismiss="modal" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target=".bd-rekening-modal-sm"> <i class="fas fa-credit-card"></i></i> Gift Or Donation</button>
+              </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
+          {{-- <div class="modal-footer">
+
+          </div> --}}
         </div>
       </div>
   </div>

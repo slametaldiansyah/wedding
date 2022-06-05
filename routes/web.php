@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\User\AldiansyahController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,8 +16,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('animation.welcome');
+    return redirect('/mengundang');
 });
 
 
 Route::resource('/home',HomeController::class);
+
+Route::resource('/mengundang',AldiansyahController::class);

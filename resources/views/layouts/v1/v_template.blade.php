@@ -101,11 +101,11 @@
 
 {{-- <script type="text/javascript" src="{{asset('assets/v1/')}}/js/jquery-1.11.0.min.js"></script> --}}
 {{-- <script type="text/javascript" src="{{asset('assets/v1/')}}/js/bootstrap.min.js"></script> --}}
-<script type="text/javascript" src="{{asset('assets/v1/')}}/js/jquery-scrolltofixed.js"></script>
-<script type="text/javascript" src="{{asset('assets/v1/')}}/js/jquery.nav.js"></script>
-<script type="text/javascript" src="{{asset('assets/v1/')}}/js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="{{asset('assets/v1/')}}/js/jquery.isotope.js"></script>
-<script src="{{asset('assets/v1/')}}/js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+{{-- <script type="text/javascript" src="{{asset('assets/v1/')}}/js/jquery-scrolltofixed.js"></script> --}}
+{{-- <script type="text/javascript" src="{{asset('assets/v1/')}}/js/jquery.nav.js"></script> --}}
+{{-- <script type="text/javascript" src="{{asset('assets/v1/')}}/js/jquery.easing.1.3.js"></script> --}}
+{{-- <script type="text/javascript" src="{{asset('assets/v1/')}}/js/jquery.isotope.js"></script>
+<script src="{{asset('assets/v1/')}}/js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script> --}}
 <script type="text/javascript" src="{{asset('assets/v1/')}}/js/wow.js"></script>
  {{-- <script src="{{asset('assets/v1/')}}/contact/jqBootstrapValidation.js"></script> --}}
 <script src="{{asset('assets/v1/')}}/js/rAF.js"></script>
@@ -126,26 +126,26 @@ function myFunction() {
 function showPage() {
   document.getElementById("loader-book").style.display = "none";
     document.getElementById("myDiv").style.display = "block";
-//   $(".bd-alertdialog-modal-sm").modal('show');
-        const swalWithBootstrapButtons = Swal.mixin({
-        customClass: {
-            confirmButton: 'btn btn-maps-view',
-            cancelButton: 'btn btn-danger'
-        },
-        buttonsStyling: false
-        })
+  $(".bd-alertdialog-modal-sm").modal('show');
+        // const swalWithBootstrapButtons = Swal.mixin({
+        // customClass: {
+        //     confirmButton: 'btn btn-maps-view',
+        //     cancelButton: 'btn btn-danger'
+        // },
+        // buttonsStyling: false
+        // })
 
-        swalWithBootstrapButtons.fire({
-            title: '',
-            showCancelButton: true,
-            confirmButtonText: 'Yes, delete it!',
-            showClass: {
-                popup: 'zoomIn wow animated'
-            },
-            hideClass: {
-                popup: 'zoomIn wow animated'
-            }
-        })
+        // swalWithBootstrapButtons.fire({
+        //     title: '',
+        //     showCancelButton: true,
+        //     confirmButtonText: 'Yes, delete it!',
+        //     showClass: {
+        //         popup: 'zoomIn wow animated'
+        //     },
+        //     hideClass: {
+        //         popup: 'zoomIn wow animated'
+        //     }
+        // })
 }
 </script>
 @include('layouts.v1.card.v_card_rekening')

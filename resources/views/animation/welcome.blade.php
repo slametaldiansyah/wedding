@@ -196,7 +196,7 @@
 	</div>
     <div id="show-ticket" class="body-ticket" style="display:none;">
 		{{-- <a href="/home"> OPEN TICKET </a> --}}
-        <div id="btn-action" class="btn"><a href="/home"> OPEN TICKET </a>
+        <div id="btn-action" class="btn"><a href="/mengundang/show"> OPEN TICKET </a>
             <div class="btn2"></div>
           </div>
 	</div>
